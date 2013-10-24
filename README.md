@@ -28,7 +28,7 @@ JSON search, recommended sort, comments 26-50: http://api.nytimes.com/svc/commun
 
 10/16–10/23: Continue working on function to parse JSON data. Test any modules for effectiveness.
 
-Notes 10/16-23
+Notes 10/16-23: Request and filestream working well to get comments and write them to a text file.
 
 
 10/23–10/30: Finalize parsing function. Add function to check for malicious code. Begin working on 

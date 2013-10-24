@@ -16,7 +16,9 @@ Weekly Goals
 
 10/9–10/16: Find an article with comments to use. Begin working on a function to parse the JSON data (maybe by using regular expressions?). Look for Node.js modules that might help with my project. 
 
-Notes for 10/9-10/16: Played with different regular expressions trying to find one that returns unique words. Striking out so far. Found an article, information is below.
+Notes for 10/9-10/16: Played with different regular expressions trying to find one that returns unique words. Striking out so far. 
+
+Found an article, information is below.
 
 See http://developer.nytimes.com/docs/community_api/. Article URL: http://www.nytimes.com/2013/07/05/opinion/krugman-e-pluribus-unum.html. Article Title: "E Pluribus Unum". Author: Paul Krugman. Section: NYTimes Opinion Pages. Example search for comments 1-25, editor's selection: http://api.nytimes.com/svc/community/v2/comments/url/exact-match.xml?url=http%3A%2F%2Fwww.nytimes.com%2F2013%2F07%2F05%2Fopinion%2Fkrugman-e-pluribus-unum.html&sort=editors-selection&api-key=22782cf7bd7c5904640c86397bf65764:19:54772968
 
@@ -24,10 +26,9 @@ Total Comments: 449. Total Comments Selected as "Editor's Choice": 28. Total Com
 
 JSON search, recommended sort, comments 26-50: http://api.nytimes.com/svc/community/v2/comments/url/exact-match?url=http%3A%2F%2Fwww.nytimes.com%2F2013%2F07%2F05%2Fopinion%2Fkrugman-e-pluribus-unum.html&offset=25&sort=recommended&api-key=22782cf7bd7c5904640c86397bf65764:19:54772968
 
-
-
-
 10/16–10/23: Continue working on function to parse JSON data. Test any modules for effectiveness.
+
+Notes 10/16-23
 
 
 10/23–10/30: Finalize parsing function. Add function to check for malicious code. Begin working on 
