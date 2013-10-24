@@ -10,17 +10,7 @@ Proposal Memo for Project 2
 10/9/13
 
 
-For this project I intend to use the NYTimes's API and create a CLI application. The goal is to get 500 comments 
-
-to one article sorted from best to worst using the NYTimes’s social ranking method. The data will be checked 
-
-for malicious code, parsed to retrieve only the text of the comments themselves, and then the comment 
-
-texts will be written to a text file and stored locally. Then I will use a function that does a basic word 
-
-count of the comments and produces a type-token ratio, which is the number of unique words in a text 
-
-divided by the number of total words.
+For this project I intend to use the NYTimes's API and create a CLI application. The goal is to get 500 comments to one article sorted from best to worst using the NYTimes’s social ranking method. The data will be checked for malicious code, parsed to retrieve only the text of the comments themselves, and then the comment texts will be written to a text file and stored locally. Then I will use a function that does a basic word count of the comments and produces a type-token ratio, which is the number of unique words in a text divided by the number of total words.
 
 
 Weekly Goals

@@ -1,0 +1,5 @@
+{
+"name": "nytimes_comment_scraper", 
+"version": "0.0.1",
+"description": "A command-line comment scraper for the nytimes.com. Requires authentication key. See http://developer.nytimes.com/docs/community_api/."
+}
