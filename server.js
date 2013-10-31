@@ -55,7 +55,7 @@ request('http://api.nytimes.com/svc/community/v2/comments/url/exact-match?url=ht
 }
 },10000);
 
-setTimeout(function getComments3 () {
+setTimeout(function getComments5 () {
 
 request('http://api.nytimes.com/svc/community/v2/comments/url/exact-match?url=http%3A%2F%2Fwww.nytimes.com%2F2013%2F07%2F05%2Fopinion%2Fkrugman-e-pluribus-unum.html&offset=100&sort=recommended&api-key=' + apiKey).pipe(fs.createWriteStream('comments'+'101-125'+'.js')), function (error, response, body) {
   if (!error && response.statusCode == 200) {
@@ -67,7 +67,7 @@ request('http://api.nytimes.com/svc/community/v2/comments/url/exact-match?url=ht
 }
 },10000);
 
-setTimeout(function getComments3 () {
+setTimeout(function getComments6 () {
 
 request('http://api.nytimes.com/svc/community/v2/comments/url/exact-match?url=http%3A%2F%2Fwww.nytimes.com%2F2013%2F07%2F05%2Fopinion%2Fkrugman-e-pluribus-unum.html&offset=125&sort=recommended&api-key=' + apiKey).pipe(fs.createWriteStream('comments'+'126-150'+'.js')), function (error, response, body) {
   if (!error && response.statusCode == 200) {
@@ -79,7 +79,7 @@ request('http://api.nytimes.com/svc/community/v2/comments/url/exact-match?url=ht
 }
 },10000);
 
-setTimeout(function getComments3 () {
+setTimeout(function getComments7 () {
 
 request('http://api.nytimes.com/svc/community/v2/comments/url/exact-match?url=http%3A%2F%2Fwww.nytimes.com%2F2013%2F07%2F05%2Fopinion%2Fkrugman-e-pluribus-unum.html&offset=150&sort=recommended&api-key=' + apiKey).pipe(fs.createWriteStream('comments'+'151-175'+'.js')), function (error, response, body) {
   if (!error && response.statusCode == 200) {
@@ -91,7 +91,7 @@ request('http://api.nytimes.com/svc/community/v2/comments/url/exact-match?url=ht
 }
 },10000);
 
-setTimeout(function getComments3 () {
+setTimeout(function getComments8 () {
 
 request('http://api.nytimes.com/svc/community/v2/comments/url/exact-match?url=http%3A%2F%2Fwww.nytimes.com%2F2013%2F07%2F05%2Fopinion%2Fkrugman-e-pluribus-unum.html&offset=175&sort=recommended&api-key=' + apiKey).pipe(fs.createWriteStream('comments'+'176-200'+'.js')), function (error, response, body) {
   if (!error && response.statusCode == 200) {
@@ -103,7 +103,7 @@ request('http://api.nytimes.com/svc/community/v2/comments/url/exact-match?url=ht
 }
 },10000);
 
-setTimeout(function getComments3 () {
+setTimeout(function getComments9 () {
 
 request('http://api.nytimes.com/svc/community/v2/comments/url/exact-match?url=http%3A%2F%2Fwww.nytimes.com%2F2013%2F07%2F05%2Fopinion%2Fkrugman-e-pluribus-unum.html&offset=200&sort=recommended&api-key=' + apiKey).pipe(fs.createWriteStream('comments'+'201-225'+'.js')), function (error, response, body) {
   if (!error && response.statusCode == 200) {
@@ -115,7 +115,7 @@ request('http://api.nytimes.com/svc/community/v2/comments/url/exact-match?url=ht
 }
 },10000);
 
-setTimeout(function getComments3 () {
+setTimeout(function getComments10 () {
 
 request('http://api.nytimes.com/svc/community/v2/comments/url/exact-match?url=http%3A%2F%2Fwww.nytimes.com%2F2013%2F07%2F05%2Fopinion%2Fkrugman-e-pluribus-unum.html&offset=225&sort=recommended&api-key=' + apiKey).pipe(fs.createWriteStream('comments'+'226-246'+'.js')), function (error, response, body) {
   if (!error && response.statusCode == 200) {
