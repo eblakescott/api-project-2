@@ -27,7 +27,15 @@ setTimeout(function getComments2 () {
 
 request('http://api.nytimes.com/svc/community/v2/comments/url/exact-match?url=http%3A%2F%2Fwww.nytimes.com%2F2013%2F07%2F05%2Fopinion%2Fkrugman-e-pluribus-unum.html&offset=25&sort=recommended&api-key=' + apiKey).pipe(fs.createWriteStream('comments'+'26-50'+'.js')), function (error, response, body) {
   if (!error && response.statusCode == 200) {
-    console.log('file successfully written') 
+		mystring = JSON.stringify(someJSON);
+		myObj = JSON.parse(mystring);
+		comments = myObj.results.comments; //Array of comments, including the comment bodies
+		cBodies = [];
+			for (var i = 0; i<comments.length; i++) {
+			cBodies.push(comments[i].commentBody);
+			}    
+		console.log(cBodies);
+		console.log('file successfully written') 
   }
 	else {
 		console.error(response.statusCode + ": " + errorBody.message);
