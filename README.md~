@@ -4,18 +4,44 @@ api_course_project_2
 Ed Scott
 --------
 
+Self-Critique Memo 11/13
+------------------------
+My goals for this project were to write a program in NodeJS that would access the NYTimes's API, retrieve comments to a specific article and sorted by recommended votes, and write the comments to structured text files stored on my machine. Since I developed a command line interface application I was more concerned with accessing, writing, and cleaning the data than manipulating it for other users. The files were solely for my benefit to aid me in submitting the comments to a web-based text analysis application.
+
+For my project I think I succeeded with the following:
+
+* Learn to build an app in NodeJS
+* Learn to use the NodeJS community modules (in my case, "request")
+* Access and authenticate to an API 
+* Obtain data from an API and write the data to a structured set of text files on my machine for further use
+* Change the timing of the URL requests so that requests can be made at different intervals (by using the setTimeout method of Javascript)
+* Provide some basic error reporting
+
+I didn't succeed with 
+
+* Working with complex objects and manipulating them when making the initial request. The NYTimes comment API provides a lot of data that I wanted to parse: I wanted to obtain only the comment bodies of the comments and remove other data (e.g., commentTitle). I was able to figure out how to do that while working in the file the comments were written to but could not figure out how to front load the text manipulation so that the output contained only the data I was interested in. 
+* Condensing functions so that they are easier to read and edit. I have ten functions, each of which performs a similar task (i.e., go to the NYTimes API and grab comments for an article). Where I got tripped up was with the NYTimes's default of providing only 25 comments at a time: the URL request changed for each successive batch of comments by using the "offset" option, where offset=0 provides the first 25 comments, offset=25 provides comments 26-50, and so on. I was unable to figure out a way to get all the comments I wanted using only one function.
+*
+
+My goals written at the beginning of the project, as well as some project notes I made along the way, are below.
+
+
 Proposal Memo for Project 2
 ----------------------------
 10/9/13
-
+--------
 
 For this project I intend to use the NYTimes's API and create a CLI application. The goal is to get 500 comments to one article sorted from best to worst using the NYTimes’s social ranking method. The data will be checked for malicious code, parsed to retrieve only the text of the comments themselves, and then the comment texts will be written to a text file and stored locally. Then I will use a function that does a basic word count of the comments and produces a type-token ratio, which is the number of unique words in a text divided by the number of total words.
 
 Weekly Goals
+------------
+10/9–10/16
+------------
+Find an article with comments to use. Begin working on a function to parse the JSON data (maybe by using regular expressions?). Look for Node.js modules that might help with my project. 
 
-10/9–10/16: Find an article with comments to use. Begin working on a function to parse the JSON data (maybe by using regular expressions?). Look for Node.js modules that might help with my project. 
-
-Notes for 10/9-10/16: Played with different regular expressions trying to find one that returns unique words. Striking out so far. 
+Notes for 10/9-10/16
+--------------------
+Played with different regular expressions trying to find one that returns unique words. Striking out so far. 
 
 Found an article, information is below.
 
@@ -25,20 +51,23 @@ Total Comments: 449. Total Comments Selected as "Editor's Choice": 28. Total Com
 
 JSON search, recommended sort, comments 26-50: http://api.nytimes.com/svc/community/v2/comments/url/exact-match?url=http%3A%2F%2Fwww.nytimes.com%2F2013%2F07%2F05%2Fopinion%2Fkrugman-e-pluribus-unum.html&offset=25&sort=recommended&api-key=22782cf7bd7c5904640c86397bf65764:19:54772968
 
-10/16–10/23: Continue working on function to parse JSON data. Test any modules for effectiveness.
+10/16–10/23
+------------
+Continue working on function to parse JSON data. Test any modules for effectiveness.
 
-Notes 10/16-23: Request and filestream working well to get comments and write them to a text file.
+Notes for 10/16-23
+--------------
+Request and filestream working well to get comments and write them to a text file.
 
+10/23–10/30
+------------
+Finalize parsing function. Add function to check for malicious code. Begin working on function to get Reddit comments, 50 at a time, to run for five hours, and save the output in a structured text file.
 
-10/23–10/30: Finalize parsing function. Add function to check for malicious code. Begin working on 
+10/30–11/6
+----------
+Finalize get function and output store. Add test suite.
 
-function to get Reddit comments, 50 at a time, to run for five hours, and save the output in a structured 
-
-text file.
-
-
-10/30–11/6: Finalize get function and output store. Add test suite.
-
-
-11/6–11/13: Prepare to present project to class.
+11/6–11/13
+-----------
+Prepare to present project to class.
 

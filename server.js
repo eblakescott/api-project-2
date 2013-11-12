@@ -138,3 +138,13 @@ request('http://api.nytimes.com/svc/community/v2/comments/url/exact-match?url=ht
 }
 },10000);
 
+/*Word count function is below. 
+
+$(function(wordCount) {
+
+for(var i = 0; i < comments.length; i++) {
+		$('body').append("<p>" + "The number of words in your text is: " + comments[i].commentBody.split([" "]).length + "</p>");
+	}
+})
+*/
+
