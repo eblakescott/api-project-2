@@ -32,6 +32,8 @@ A comment is text that has been posted beneath an article hosted on the NYTimes.
 }
 
 ```
+###See http://developer.nytimes.com/docs/community_api/ for a description of the object and fields, as well as additional examples.
+
 Self-Critique Memo 11/13
 ------------------------
 My goals for this project were to write a program in NodeJS that would access the NYTimes's API, retrieve comments to a specific article and sorted by recommended votes, and write the comments to structured text files stored on my machine. Since I developed a command line interface application I was more concerned with accessing, writing, and cleaning the data than manipulating it for other users. The files were solely for my benefit to aid me in submitting the comments to a web-based text analysis application.

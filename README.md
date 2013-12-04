@@ -2,6 +2,7 @@
 ====================
 
 #Ed Scott
+#Gist at https://gist.github.com/eblakescott/7664525
 --------
 
 ##Object
