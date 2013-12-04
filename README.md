@@ -1,7 +1,7 @@
-api_course_project_2
+#nytimes_comment_scraper
 ====================
 
-Ed Scott
+##Ed Scott
 --------
 
 Self-Critique Memo 11/13

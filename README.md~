@@ -21,7 +21,7 @@ I didn't succeed with
 
 * Working with complex objects and manipulating them when making the initial request. The NYTimes comment API provides a lot of data that I wanted to parse: I wanted to obtain only the comment bodies of the comments and remove other data (e.g., commentTitle). I was able to figure out how to do that while working in the file the comments were written to but could not figure out how to front load the text manipulation so that the output contained only the data I was interested in. 
 * Condensing functions so that they are easier to read and edit. I have ten functions, each of which performs a similar task (i.e., go to the NYTimes API and grab comments for an article). Where I got tripped up was with the NYTimes's default of providing only 25 comments at a time: the URL request changed for each successive batch of comments by using the "offset" option, where offset=0 provides the first 25 comments, offset=25 provides comments 26-50, and so on. I was unable to figure out a way to get all the comments I wanted using only one function.
-*
+* Developing a type-token ratio function to manipulate the comment bodies. Originally I wanted to create a type-token ratio function that would join my word count function as part of a basic text analysis suite. I tried to create one using regular expressions but didn't quite get there. I ended up spending more of my time trying to get and clean the data from the API.
 
 My goals written at the beginning of the project, as well as some project notes I made along the way, are below.
 
