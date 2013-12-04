@@ -1,8 +1,38 @@
 #nytimes_comment_scraper
 ====================
 
-##Ed Scott
+#Ed Scott
 --------
+
+##Object
+
+###Comment
+A comment is text that has been posted beneath an article hosted on the NYTimes.
+
+###Example Comment Object
+
+```js
+{
+"status":"approved",
+"commentSequence":1,
+"userTitle":"NULL",
+"userURL":"NULL",
+"commentTitle":"n\/a",
+"commentBody":"Unfortunately, I must agree more with the analysis of despair written by Mr. James than a less than convincing optimism of Dr. Krugman. In 1855 Walt Whitman promulgated an ecstatic and exalted vision of democracy in \"song of Myself.\" Several decades later in his \"democratic Vistas\" he descended into despair when confronted with the crass reality of social division, greed, the ascent of the robber barons which dashed the optimism he nurtured in 1855. These two works of a great American writer mirror the statements of Dr. Krugman and Mr. James. To my great chagrin I must side with Mr. James.",
+"approveDate":"1373034183",
+"recommendations":43,
+"replies":[],
+"editorsSelection":true,
+"times_people":1,
+"sharing":0,
+"email_status":"0",
+"display_name":"gpd",
+"location":"Riverdale New York",
+"userComments":"api.nytimes.com\/svc\/community\/v2\/comments\/user\/id\/23271686.xml"
+}
+
+```
+###See http://developer.nytimes.com/docs/community_api/ for a description of the object and fields, as well as additional examples.
 
 Self-Critique Memo 11/13
 ------------------------
